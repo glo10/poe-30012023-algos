@@ -74,3 +74,12 @@ if(age <= 18) { // faux
 } else { // ce bloc de code sera exécuté
     console.log('majeur')
 }
+
+/*
+* Transtypage
+* Avec un prompt tout ce qui est récupéré est une chaine de caractère (string)
+* Pour transformer la chaine caractère en nombre il faut utiliser la fonction parseInt(variable ici)
+*/
+
+let myAge = prompt("votre age")
+myAge = parseInt(myAge)
