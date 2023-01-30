@@ -8,6 +8,15 @@
 
 ---
 
+## TP
+
+- [TP 0 : Autonomie consolidation structures de contrôle et itératives](./1-tp/tp0.md)
+- [TP Banque : partie 1](./1-tp/tp1_banque_part1.md)
+- [TP Banque : partie 2](./1-tp/tp2_banque_part2.md)
+- [TP Banque : partie 3](./1-tp/tp3_banque_part3.md)
+
+---
+
 ## Exercices
 
 ### Applications du cours
@@ -60,14 +69,6 @@
 - [Corrections des exercices sur les conditions](./2-exercices/corrections/conditions.md)
 - [Corrections des exercices sur les boucles](./2-exercices/corrections/js/conditions.js)
 
----
-
-## TP
-
-- [TP 0 : Autonomie consolidation structures de contrôle et itératives](./1-tp/tp1_banque_part1.md)
-- [TP Banque : partie 1](./1-tp/tp1_banque_part1.md)
-- [TP Banque : partie 2](./1-tp/tp2_banque_part2.md)
-- [TP Banque : partie 3](./1-tp/tp3_banque_part3.md)
 
 ---
 
