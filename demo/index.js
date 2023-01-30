@@ -1,95 +1,110 @@
+// Commentaire sur une ligne cad ligne non interprété par JS
+/**
+ * Commentaire
+ * sur
+ * plusieurs
+ * lignes
+ */
+
 // // Déclarer une variable
-// let firstName = 'Glodie'
-// let lastName = 'Tshimini'
-// let age = 31
+let firstName = 'Glodie'
+let lastName = 'Tshimini'
+let age = 31
 
-// age = 32
-// age = 30
+age = 32 // change la valeur de la variable age de 31 à 30 (pas besoin du let avant, ici on réaffecte la valeur, let sert à déclarer la variable)
+age = 30
 
-// // Déclarer une constante
+// Déclarer une constante, la valeur ne doit pas changer au cours du temps
 
-// const pi = 3.14
+const pi = 3.14
 
-// /*
-// * Opérateur d'affection ou d'assignation
-// * En js c'est = 
-// */
+/*
+* Opérateur d'affection ou d'assignation
+* En js c'est = 
+*/
 
-// /**
-//  * Maths 
-//  * */
-// const nb1 = 10
-// const nb2 = 3
+/**
+ * Maths 
+ * */
+const nb1 = 10
+const nb2 = 3
 
-// console.log(nb1 + nb2) // 13
-// console.log(nb1 - nb2) // 7
-// console.log(nb1 / nb2) // 3.33
+console.log(nb1 + nb2) // 13
+console.log(nb1 - nb2) // 7
+console.log(nb1 / nb2) // 3.333333
+console.lof(nb1 % nb2) // 1
 
 
-// /**
-//  * Opérateurs de comparaison
-//  */
-// console.log(nb1 == nb2) // false
-// console.log(nb1 != nb2) // true
+/**
+ * Opérateurs de comparaison
+ */
+console.log(nb1 == nb2) // false
+console.log(nb1 != nb2) // true
 
-// /**
-//  * Opérateurs logiques
-//  */
+/**
+ * Opérateurs logiques
+ */
 
-// console.log(nb1 == nb2 & nb1 != 5) // & <=> AND
-// console.log(nb1 == nb2 || nb1 != 5) // ||(ALTGR + 6) <=> OR
-// console.log(!true) // ! <=> NOT (n'est pas)
-// /**
-//  * Concaténation
-//  */
-// console.log('Je m\'appel ' + firstName + ' ' + lastName) // Je m'appel Glodie Tshimini
-// console.log("Je m'appel " + firstName + ' ' + lastName) // Je m'appel Glodie Tshimini
-// console.log(`Je m'appel ${firstName} ${lastName}`) //  `(ALTGR + 7) propre à JS Je m'appel Glodie Tshimini
+console.log(nb1 == nb2 & nb1 != 5) // & <=> AND
+console.log(nb1 == nb2 || nb1 != 5) // ||(ALTGR + 6) <=> OR
+console.log(!true) // ! <=> NOT (n'est pas)
 
-// /**
-//  * Afficher les informations dans la console
-//  */
-// console.log('visible depuis F12 et dans l\'onglet console')
+/**
+ * Concaténation
+ * Opérateur de concaténation + ou `${variable}`
+ * Attention + avec des strings effectue une concaténation, + avec des nombres => addition
+ */
+console.log('Je m\'appelle ' + firstName + ' ' + lastName) // Je m'appel Glodie Tshimini
+console.log("Je m'appelle " + firstName + ' ' + lastName) // Je m'appel Glodie Tshimini
+console.log(`Je m'appelle ${firstName} ${lastName}`) //  `(ALTGR + 7) propre à JS Je m'appel Glodie Tshimini
 
-// /**
-//  * Afficher une boite de dialogue
-//  */
-// const msg = prompt('mon message ici, la valeur peut être stocké dans une variable ou constante')
+/**
+ * Afficher les informations dans la console
+ * console est un objet natif de JS que vous verrez plus tard
+ * log est une fonction de l'objet console, que vous verrez plus tard
+ */
+console.log('visible depuis F12 et dans l\'onglet console')
 
-// /**
-//  * Conditions
-//  */
+/**
+ * Afficher une boite de dialogue
+ * Attention tout ce qui récupéré par un prompt est de type string
+ */
+const msg = prompt('mon message ici, la valeur peut être stocké dans une variable ou constante')
 
-// /*
-//  if( condition à vérifier <=> condition doit être vraie pour que le bloc du code ici s'exécute) {
-//     // opération 1
-// } else { // condition entre () dans le if est faux
-//     // opération 2
-// }
-// */
-// if(age <= 18) { // faux
-//     console.log('mineur')
-// } else if(age == 30) {
-//     console.log('la personne a exactement 30 ans')
-// } else { // ce bloc de code sera exécuté
-//     console.log('majeur')
-// }
+/**
+ * Conditions
+ */
 
-// /*
-// * Transtypage
-// * Avec un prompt tout ce qui est récupéré est une chaine de caractère (string)
-// * Pour transformer la chaine caractère en nombre il faut utiliser la fonction parseInt(variable ici)
-// */
+/*
+ if( condition à vérifier <=> condition doit être vraie pour que le bloc du code ici s'exécute) {
+    // opération 1
+} else { // condition entre () dans le if est faux
+    // opération 2
+}
+*/
+if(age < 18) { // faux
+    console.log('mineur')
+} else if(age == 30) {
+    console.log('la personne a exactement 30 ans')
+} else { // ce bloc de code sera exécuté
+    console.log('majeur')
+}
 
-// let myAge = prompt("votre age")
-// myAge = parseInt(myAge)
+/*
+* Transtypage (passer d'un type à un autre type de données)
+* Avec un prompt tout ce qui est récupéré est une chaine de caractère 
+* Pour transformer la chaine caractère en nombre il faut utiliser la fonction parseInt(variable ici), il en existe d'autres...
+*/
+
+let myAge = prompt("votre age")
+myAge = parseInt(myAge)
 
 /**
  * Boucle tant que (while)
  * Evalue la condition dès le départ
- * Si dès le début c'est faux, le bloc d'instruction
- * dans la boucle ne sera jamais exécuté
- * Si c'est vrai, ça sera exécuté puis à la fin il évalue à nouveau la condition
+ * Si dès le début c'est faux, le bloc d'instruction dans la boucle ne sera jamais exécuté
+ * Si c'est vrai, ça sera exécuté puis à la fin il évalue à nouveau la condition (si c'est vrai, il exécute encore les instructions)
+ * Tant que c'est vrai, je boucle
  * 
 */
 let nb3 = 15
@@ -97,14 +112,29 @@ while(nb3 <= 10) {
 // 15 n'est pas inférieur ou égale à 10 donc évaluation à faux de la condition
     console.log('Ne sera jamais exécuté')
     console.log('Ni celle-ci')
+    console.log('Tout ce qui est à l\'intérieur de mon bloc while entre les accolades ne sera jamais exécuté tant que nb3 sera supérieur à 10')
 }
 
-while(nb3 >= 9) {
+while(nb3 >= 10) {
     console.log('je suis exécuté 6 fois')
     nb3-- // nb3 <=> nb3 = nb3 - 1 à nb3 j'enlève 1 à chaque tour, lorsque nb3 sera égale à 9, le programme sortira de la boucle
+    /**
+     * 15 >= 10 est vrai 1 tour
+     * 14 >= 10 est vrai 2 tour
+     * 13 >= 10 est vrai 3 tour
+     * 12 >= 10 est vrai 4 tour
+     * 11 >= 10 est vrai 5 tour
+     * 10 >= 10 est vrai 6 tour
+     * 9 >= 10 est faux, c'est fini le programme va quiiter la boucle
+     */
 }
 
-// La condition est évaluée à la fin donc dès le départ si c'est faux ça sera quand même exécuté au moins une fois
+// La condition est évaluée à la fin de la boucle donc dès le départ si c'est faux ça sera quand même exécuté au moins une fois
 do {
     console.log('quoi qu\'il arrive je suis exécuté au moins 1 fois')
 } while(!true)
+
+// boucle for initiation;condition;incrémentation
+for(let i = 0; i < 10; i++){
+    console.log('compteur ', i)
+}
