@@ -55,3 +55,22 @@ console.log('visible depuis F12 et dans l\'onglet console')
  * Afficher une boite de dialogue
  */
 const msg = prompt('mon message ici, la valeur peut être stocké dans une variable ou constante')
+
+/**
+ * Conditions
+ */
+
+/*
+ if( condition à vérifier <=> condition doit être vraie pour que le bloc du code ici s'exécute) {
+    // opération 1
+} else { // condition entre () dans le if est faux
+    // opération 2
+}
+*/
+if(age <= 18) { // faux
+    console.log('mineur')
+} else if(age == 30) {
+    console.log('la personne a exactement 30 ans')
+} else { // ce bloc de code sera exécuté
+    console.log('majeur')
+}
