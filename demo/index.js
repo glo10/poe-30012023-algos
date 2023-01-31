@@ -32,7 +32,7 @@ const nb2 = 3
 console.log(nb1 + nb2) // 13
 console.log(nb1 - nb2) // 7
 console.log(nb1 / nb2) // 3.333333
-console.lof(nb1 % nb2) // 1
+console.log(nb1 % nb2) // 1
 
 
 /**
@@ -108,7 +108,7 @@ myAge = parseInt(myAge)
  * 
 */
 let nb3 = 15
-while(nb3 <= 10) { 
+while(nb3 <= 10) {
 // 15 n'est pas inférieur ou égale à 10 donc évaluation à faux de la condition
     console.log('Ne sera jamais exécuté')
     console.log('Ni celle-ci')
