@@ -179,7 +179,6 @@ helloYou('Glodie') // hello Glodie
 
 function helloUs(firstName1, firstName2) {// fonction avec 2 params
     return 'hello ' + firstName1 + ' ' + firstName2 
-    console.log('ne sera jamais exécuté')
 }
 let glodie = prompt('prenom')
 
@@ -187,3 +186,16 @@ let us = helloUs('Bob', glodie)
 let us2 = helloUs('Toto', 'Momo')
 console.log(us) // hello Bob Glodie
 console.log(helloUs('charles', 'marc')) // hello charles marc
+
+/**
+ * Tableau en JS
+ */
+
+let tab = [] // tableau vide
+tab[0] = 1
+tab[1] = 2
+tab[2] = 3
+
+for(let i = 0; i <= 100000000; i++) {
+    tab[i] = i+1
+}
