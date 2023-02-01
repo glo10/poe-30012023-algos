@@ -8,6 +8,12 @@
 
 ---
 
+## Demo JS
+
+[JavaScript bases](./demo/index.js)
+
+---
+
 ## TP
 
 - [TP 0 : Autonomie consolidation structures de contrôle et itératives](./1-tp/tp0.md)
@@ -49,6 +55,11 @@
 - [exercice 13](./2-exercices/bonus/exercice13.md)
 - [exercice 14](./2-exercices/bonus/exercice14.md)
 
+---
+
+## Niveau ++
+
+- [exercices levelup](./2-exercices/levelup/)
 ---
 
 ## Corrections des exercices

@@ -108,13 +108,14 @@ myAge = parseInt(myAge)
  * 
 */
 let nb3 = 15
-while(nb3 <= 10) {
-// 15 n'est pas inférieur ou égale à 10 donc évaluation à faux de la condition
+while(nb3 <= 10) { // condition dès le début est fausse donc rien sera exécuté
+    // 15 n'est pas inférieur ou égale à 10 donc évaluation à faux de la condition
     console.log('Ne sera jamais exécuté')
     console.log('Ni celle-ci')
     console.log('Tout ce qui est à l\'intérieur de mon bloc while entre les accolades ne sera jamais exécuté tant que nb3 sera supérieur à 10')
 }
 
+// while avec une décrémentation
 while(nb3 >= 10) {
     console.log('je suis exécuté 6 fois')
     nb3-- // nb3 <=> nb3 = nb3 - 1 à nb3 j'enlève 1 à chaque tour, lorsque nb3 sera égale à 9, le programme sortira de la boucle
@@ -134,7 +135,55 @@ do {
     console.log('quoi qu\'il arrive je suis exécuté au moins 1 fois')
 } while(!true)
 
-// boucle for initiation;condition;incrémentation
-for(let i = 0; i < 10; i++){
-    console.log('compteur ', i)
+// While avec une incrémentation
+let nb4 = 10
+while(nb4 < 15) {
+    console.log(nb4)
+    nb4++
 }
+
+// do while
+let nb5 = 15
+do {// fait et ensuite vérifie la condition
+    console.log(nb5)
+} while(nb5 < 15)
+
+/**
+ * Boucle for
+ * 1. un compteur (initialisation)
+ * 2. Une condition (condition)
+ * 3. Incrémentation ou décrémentation (variation du compteur)
+ */
+for(let i = 0; i < 10;i++) {// exactement pareil que let i = 10; i > 0; i--
+    console.log('i ', i)
+}
+
+/**
+ * Fonction
+ * 2 phases
+ *  1. Déclaration de la fonction (nom, [paramètres]) [] : optionnel
+ *  2. L'exécution (appel de la fonction), l'appeler avec son nom([params])
+ */
+function hello() {// fonction sans params
+    console.log('hello world')
+}
+
+hello() // hello world
+
+
+function helloYou(firstName) {// fonction avec un paramètre (jargon technique on dit params)
+    console.log('hello ' + firstName)
+}
+
+helloYou('Glodie') // hello Glodie
+
+function helloUs(firstName1, firstName2) {// fonction avec 2 params
+    return 'hello ' + firstName1 + ' ' + firstName2 
+    console.log('ne sera jamais exécuté')
+}
+let glodie = prompt('prenom')
+
+let us = helloUs('Bob', glodie)
+let us2 = helloUs('Toto', 'Momo')
+console.log(us) // hello Bob Glodie
+console.log(helloUs('charles', 'marc')) // hello charles marc
