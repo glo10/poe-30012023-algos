@@ -192,10 +192,19 @@ console.log(helloUs('charles', 'marc')) // hello charles marc
  */
 
 let tab = [] // tableau vide
-tab[0] = 1
+// remplissage du tableau de manière statique (manuel)
+tab[0] = 1 
 tab[1] = 2
 tab[2] = 3
 
-for(let i = 0; i <= 100000000; i++) {
+// remplissage du tableau au sein d'une boucle de manière dynamique
+for(let i = 0; i <= 100; i++) {
     tab[i] = i+1
+}
+
+let sentence = "hello dhdhdjdj" // chaine de caractère = tableau 
+// qui stocke aux rangs 0 = h, 1 = e, 2= l etc
+
+for(let i = 0; i < sentence.length; i++) {
+    console.log(sentence[i])
 }
