@@ -24,7 +24,7 @@ Exemple
 Exemple
 
 *En entrée : `a = 15`, `b = 10`*
-*En sortie : `a = 10` et `b = 15`*
+*En sortie : `a = 10 et b = 15`*
 
 ---
 
