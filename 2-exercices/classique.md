@@ -8,11 +8,11 @@
 
 ---
 
-1. Ecrivez un programme qui compte le nombre totale des consonnes dans une phrase
+1. Ecrivez un programme qui compte le nombre totale des consonnes dans une phrase.
 
 Exemple
 
-*En entrée : `'ceci est une phrase'*`
+*En entrée : `'ceci est une phrase'`*
 *En sortie : `9`*
 
 ---
@@ -28,17 +28,20 @@ Exemple
 
 ---
 
-3. Ecrivez un programme qui vérifie qu'un nombre est un [palindrome](https://www.larousse.fr/dictionnaires/francais/palindrome/57418)
+3. Ecrivez un programme qui vérifie qu'un mot est un [palindrome](https://www.larousse.fr/dictionnaires/francais/palindrome/57418). **Pour simplifier l'exercice, on se focalise uniquement sur un mot et pas une phrase.**
 
 Exemples
 
 *En entrée : `rats`*
 *En sortie : `false`*
 
-*En entrée : `Elle`*
+*En entrée : `elle`*
 *En sortie : `true`*
 
 *En entrée : `Laval`*
+*En sortie : `true`*
+
+*En entrée : `gag`*
 *En sortie : `true`*
 
 
@@ -69,6 +72,14 @@ Exemple
 *En entrée : `Ceci est une belle phrase`*
 *En sortie : `phrase`*
 
+Aide : pour séparer une phrase plusieurs mots, vous pouvez utiliser la fonction split(' ').
+Cf. [documentation de la fonction split](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+
+Exemple bout de code :
+
+`let str = "hello world"`
+`let words = str.split(' ') // découpage en mot à partir des espaces. words un tableau contenant les mots`
+
 ---
 
 7. Ecrivez un programme qui retourne la taille du mot le plus petit d'une phrase.
@@ -80,7 +91,7 @@ Exemple
 
 ---
 
-8. Ecrivez un programme qui retourne la taille du mot le plus long d'une phrase
+8. Ecrivez un programme qui retourne la taille du mot le plus long d'une phrase.
 
 Exemple
 
@@ -93,6 +104,6 @@ Exemple
 
 Exemple 
 
-En entrée : [ [10,7,6,8], [15,-1,56,7], [75,4,-5,-100] ]
+*En entrée : [ [10,7,6,8], [15,-1,56,7], [75,4,-5,-100] ]*
 
-En sortie : [10,56,75]
+*En sortie : [10,56,75]*
