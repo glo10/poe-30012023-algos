@@ -208,3 +208,20 @@ let sentence = "hello dhdhdjdj" // chaine de caractère = tableau
 for(let i = 0; i < sentence.length; i++) {
     console.log(sentence[i])
 }
+
+// Rappel sur les tableaux
+
+// Déclaration d'un tableau vide en JS
+let unTableau = []
+// remplissage manuel de mon tableau
+unTableau[0] = 'glodie'
+unTableau[1] = 'gianni'
+unTableau[2] = 'justine'
+// remplissage dynamique
+let autreTableau = []
+for(let i = 0 ; i < 100 ; i = i++) {
+    autreTableau[i] = prompt('saisir quelque chose')
+}
+
+// Lire les valeurs dans un tableau
+console.log(autreTableau[4])
