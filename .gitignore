@@ -10,3 +10,6 @@ package*
 basics.js
 planning_detaille.pdf
 .vscode
+jest.config.js
+tests
+coverage
