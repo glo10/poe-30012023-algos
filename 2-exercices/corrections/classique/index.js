@@ -158,7 +158,7 @@ function maxOfEachSubTab(arr) {
   return res;
 }
 
-/*
+/**
 * Ne cherchez pas à comprendre les lignes suivantes
 * Pour les curieux c'est une façon de pouvoir exporter mes fonctions en dehors de ce fichier
 * Donc pouvoir les réutiliser ailleurs

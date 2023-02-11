@@ -33,7 +33,7 @@ console.log('phrase ', phrase, 'nombre de voyelles ', compteur)
 
 // phrase = "bonjour"
 for(let i = 0; i < phrase.length; i++) {
-    let lt = phrase[i] // B ensuite au prochain tour o
+    let lt = phrase[i] // b ensuite au prochain tour o
     // 5
     if(
         lt == 'a' ||

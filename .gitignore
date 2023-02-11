@@ -2,7 +2,7 @@ node_modules
 0-sequencage
 cours
 ressource
-**/corrections
+1-tp/corrections
 **/correction
 **/tp3_morpion.md
 **/tp4_puissance4.md
@@ -13,3 +13,5 @@ planning_detaille.pdf
 jest.config.js
 tests
 coverage
+**/*.alg
+**/corrections/exercice9
